@@ -36,7 +36,6 @@
   background-image: url('../images/joe-soul-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-	height: 100vh;
 }
 
  .joe_soul {
@@ -104,6 +103,7 @@ transition: 1s ease;
     padding:32px;
     display: flex;
     flex-flow: column;
+		padding: 30px 0 60px;
 }
 
 
@@ -161,7 +161,7 @@ transition: 1s ease;
   background-image: url('../images/newyork.png');
   background-repeat: no-repeat;
   background-size: cover;
-	height: 100vh;
+	background-position: 8%;
 }
 
 .mittens_part {
@@ -173,7 +173,7 @@ transition: 1s ease;
 
 .mittens {
     position: relative;
-    padding: 212px 43px 50px;
+    padding: 197px 43px 106px;
     display: flex;
     flex-flow: column-reverse;
 }
@@ -217,6 +217,17 @@ transition: 1s ease;
     padding-bottom: 2%;
 		font-size: 1.2rem;
   }
+
+	.mittens {
+    padding: 207px 45px 122px;
+  }
+
+	.mittens_part::before{
+		background-position: 37%;
+ }
+ .mittens img{
+	 margin:0;
+ }
 }
 
 @media (min-width: 850px) {
@@ -256,10 +267,8 @@ transition: 1s ease;
     width: 60%;
   }
 	.Joe2 {
-    padding: 0px;
     width: 75%;
     margin: auto;
-		padding-top: 30px;
   }
 
 	.mittens_part::before {
@@ -290,7 +299,7 @@ transition: 1s ease;
 @media (min-width: 1060px) {
 
 	.mittens_part::before {
-    background-position: 10%;
+    background-position: 32%;
   }
 
 	.subpage_logo {
@@ -303,5 +312,9 @@ transition: 1s ease;
 
 	.cat-intro {
     width: 50%;
+  }
+	.mittens {
+    padding: 171px 83px 56px 50px;
+    margin-left: 97px;
   }
 }

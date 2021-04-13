@@ -85,20 +85,7 @@ body{
 
 
 
-/* Sticky footer */
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.mainpart {
-  flex: 1 0 auto;
-}
-
-/* .footer {
-  flex-shrink: 0;
-} */
 
 .mainpart {
 	width: 100%;
@@ -123,7 +110,7 @@ p{
     position: relative;
     display: flex;
     flex-flow: column;
-    padding: 100px 50px;
+    padding: 98px 50px;
 }
 
 /* ******************* Spark Music Note Animation ******************* */
@@ -167,7 +154,7 @@ p{
 
 /************** Slideshow Images for 22 **************/
 #slideshow {
-  margin: 9% auto 1%;
+  /* margin: 9% auto 1%; */
   position: relative;
   width: 240px;
   height: 240px;
@@ -229,7 +216,7 @@ p{
 	.introduction {
     display: flex;
     flex-flow: row-reverse;
-	   padding: 235px 50px 200px;
+	   padding: 235px 50px 130px;
   }
 }
 
@@ -238,12 +225,11 @@ p{
 	.introduction {
     width: 80%;
   }
+
 	.introduction {
-    padding: 300px 50px 200px;
+    padding: 300px 50px 130px;
   }
-	.introduction {
-    padding: 300px 50px 200px;
-  }
+
 	.para22 h1 {
     font-size: 3rem;
   }
@@ -264,6 +250,6 @@ p{
 @media (min-width:1200px) {
 	.introduction {
     width: 69%;
-		padding: 300px 82px 200px;
+		padding: 300px 82px 130px;
   }
 }
