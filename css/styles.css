@@ -15,10 +15,6 @@
 	box-sizing: border-box;
 }
 
-
-
-
-
 /*=========================
 
   Homepage Page Styling
@@ -134,6 +130,7 @@ img.logo {
   background-repeat: no-repeat;
   background-position: 5%;
   background-size: cover;
+	height: 100vh;
 }
 
 .joe_part {
@@ -238,7 +235,7 @@ transition: 1s ease;
 .intro p {
     font-size: 1rem;
     font-family: 'PoetsenOne';
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 		font-weight: 100;
 }
 
@@ -378,4 +375,5 @@ transition: 1s ease;
 	.intro h2 {
     font-size: 1.5rem;
   }
+
 }
