@@ -36,7 +36,7 @@
   background-image: url('../images/joe-soul-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 }
 
  .joe_soul {
@@ -163,7 +163,7 @@ transition: 1s ease;
   background-repeat: no-repeat;
   background-size: cover;
 	background-position: 8%;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .mittens_part {

@@ -130,7 +130,7 @@ img.logo {
   background-repeat: no-repeat;
   background-position: 5%;
   background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .joe_part {
@@ -195,7 +195,6 @@ transition: 1s ease;
 
 .Joe {
     position: relative;
-    padding:32px;
     display: flex;
     flex-flow: column;
 }
