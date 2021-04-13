@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Meet 22</title>
+
+		<link type="text/css" rel="stylesheet" href="css/style22.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+
+	<body>
+
+	  <div class="mainpart">
+
+	    <div class="nav">
+	      <a href="index.html"><img class="subpage_logo" src="images/SOUL.png" alt="Soul"></a>
+	    </div>
+
+	    <div class="introduction">
+
+				<div id="slideshow">
+				  <div>
+				    <img src="images/22Skeptical.png" alt="22 is skeptical">
+				  </div>
+				  <div>
+				    <img src="images/22Scientist.png" alt= "22 is a scientist">
+				  </div>
+				  <div>
+				    <img src="images/22FireFighter.png" alt="22 is a firefighter">
+				  </div>
+				  <div>
+				    <img src="images/22Painter.png" alt="22 is a painter">
+				  </div>
+				  <div>
+				    <img src="images/22Mad.png" alt="22 is mad">
+				  </div>
+				</div>
+
+	      <div class="intro para22">
+	        <h1>22</h1>
+					<p>22 is a stubborn soul existing in the Great Before, the place where souls prepare for life on Earth. </p> <br>
+					<p>Unlike other souls, 22 isn't thrilled about going to Earth and can't seem to find her spark.</p>
+	      </div>
+	    </div>
+	  </div>
+
+		<footer class="notes">
+			<img class="music" src="images/music.png" alt="music notes">
+			<img class="music-notes" src="images/music.png" alt="music notes">
+		</footer>
+
+
+		<!--  ***************** js links ***************** -->
+		<script src="js-22/scripts-22.js"></script>
+		<script src="js-22/bubbly-bg.js"></script>
+
+		 <script>bubbly({
+			blur:15,
+			colorStart: '#8597e9',
+			colorStop: '#f4d1fd',
+			radiusFunc:() => 5 + Math.random() * 15,
+			angleFunc:() => -Math.PI / 2,
+			velocityFunc:() => Math.random() * 2,
+			bubbleFunc:() => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`,
+			bubbles:350
+		});;</script>
+
+	</body>
+	</html>

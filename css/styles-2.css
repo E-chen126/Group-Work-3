@@ -1,0 +1,307 @@
+@font-face {
+	font-family: 'Herkules';
+	src: url('../fonts/Herkules.otf');
+}
+
+@font-face {
+	font-family: 'PoetsenOne';
+	src: url('../fonts/PoetsenOne-Regular.ttf');
+ }
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+
+/*=========================
+
+  Joe Gardner's Soul
+
+=========================*/
+
+
+
+.joe_soul::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+	bottom: 0;
+	right: 0;
+  opacity: 0.6;
+  background-image: url('../images/joe-soul-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+	height: 100vh;
+}
+
+ .joe_soul {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+  .nav {
+	z-index: 3;
+	position: absolute;
+	left: -7%;
+	top:-4%;
+}
+
+.subpage_logo {
+  cursor: pointer;
+  max-width: 200px;
+}
+
+/* Logo Animation */
+
+
+.subpage_logo {
+  animation: animation 1000ms linear both;
+}
+
+
+@keyframes animation {
+  0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.2% { -webkit-transform: matrix3d(-0.834, 0.559, 0, 0, -0.703, -0.717, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(-0.834, 0.559, 0, 0, -0.703, -0.717, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% { -webkit-transform: matrix3d(-0.986, -0.196, 0, 0, -0.017, -1.006, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(-0.986, -0.196, 0, 0, -0.017, -1.006, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.41% { -webkit-transform: matrix3d(-0.091, -1.003, 0, 0, 0.955, -0.318, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(-0.091, -1.003, 0, 0, 0.955, -0.318, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% { -webkit-transform: matrix3d(0.798, -0.613, 0, 0, 0.769, 0.648, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.798, -0.613, 0, 0, 0.769, 0.648, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.71% { -webkit-transform: matrix3d(0.933, 0.366, 0, 0, -0.224, 0.977, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.933, 0.366, 0, 0, -0.224, 0.977, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% { -webkit-transform: matrix3d(0.923, 0.391, 0, 0, -0.254, 0.97, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.923, 0.391, 0, 0, -0.254, 0.97, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% { -webkit-transform: matrix3d(0.813, 0.583, 0, 0, -0.524, 0.853, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.813, 0.583, 0, 0, -0.524, 0.853, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.92% { -webkit-transform: matrix3d(0.834, 0.552, 0, 0, -0.511, 0.86, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.834, 0.552, 0, 0, -0.511, 0.86, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% { -webkit-transform: matrix3d(0.965, 0.262, 0, 0, -0.262, 0.965, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.965, 0.262, 0, 0, -0.262, 0.965, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% { -webkit-transform: matrix3d(0.992, 0.125, 0, 0, -0.134, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.992, 0.125, 0, 0, -0.134, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  31.43% { -webkit-transform: matrix3d(1, 0.031, 0, 0, -0.042, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0.031, 0, 0, -0.042, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% { -webkit-transform: matrix3d(0.999, -0.042, 0, 0, 0.036, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, -0.042, 0, 0, 0.036, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  56.46% { -webkit-transform: matrix3d(1, 0.001, 0, 0, -0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0.001, 0, 0, -0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% { -webkit-transform: matrix3d(1, 0.003, 0, 0, -0.002, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0.003, 0, 0, -0.002, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  81.48% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+
+/* Logo Animation */
+
+.nav img{
+opacity:0.7;
+transition: 1s ease;
+}
+
+.nav img:hover{
+opacity:1.6;
+transition: 1s ease;
+}
+
+.Joe2 {
+    position: relative;
+    padding:32px;
+    display: flex;
+    flex-flow: column;
+}
+
+
+.joeSoul {
+    width: 100%;
+    max-width: 161px;
+    margin: auto;
+    padding-top: 88px;
+}
+
+.joeSoul{
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.joeSoul:hover {
+ transform: scale(1.1);
+}
+
+.intro {
+    color: #000;
+    width: 90%;
+    padding: 3%;
+    margin: auto;
+    line-height: 1.5rem;
+    position: relative;
+}
+
+.intro h1 {
+    font-size: 1.8rem;
+    font-family: 'Herkules';
+    padding-bottom: 4%;
+}
+
+.intro p {
+    font-size: 1rem;
+    font-family: 'PoetsenOne';
+    padding-bottom: 5%;
+		font-weight: 100;
+}
+/*=========================
+
+        Mittens
+
+=========================*/
+.mittens_part::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+	bottom: 0;
+	right: 0;
+  opacity: 0.6;
+  background-image: url('../images/newyork.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+	height: 100vh;
+}
+
+.mittens_part {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.mittens {
+    position: relative;
+    padding: 212px 43px 50px;
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+
+.walkingMittens {
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+}
+
+.walkingMittens{
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.walkingMittens:hover {
+ transform: scale(1.1);
+}
+
+ #icon {
+  width:20px;
+  cursor: pointer;
+}
+
+/*=========================
+
+  Media Query
+
+=========================*/
+
+@media (min-width:600px) {
+	.nav {
+    left: 0%;
+  }
+
+	.joe_soul::before {
+		background-position: 48%;
+  }
+	.intro p {
+    padding-bottom: 2%;
+		font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 850px) {
+
+	.joe_soul::before {
+		background-position: 50% 0;
+  }
+
+	.Joe2 {
+  display: flex;
+	flex-flow: row-reverse;
+  justify-content:space-evenly;
+  }
+
+  .joeSoul {
+	 width: 100%;
+	 max-width: 250px;
+  }
+
+  .intro h1 {
+  font-size: 3rem;
+  }
+
+  .intro p {
+  font-size:1.2rem;
+  }
+
+  .intro p {
+  margin:2% 0;
+  }
+}
+
+
+@media (min-width: 900px) {
+
+	.intro {
+    width: 60%;
+  }
+	.Joe2 {
+    padding: 0px;
+    width: 75%;
+    margin: auto;
+		padding-top: 30px;
+  }
+
+	.mittens_part::before {
+		background-position: 30%;
+	}
+
+	.mittens {
+    padding: 168px 37px 50px;
+  }
+
+	.walkingMittens {
+    max-width: 350px;
+  }
+	.cat-intro {
+		margin:0;
+	}
+	.subpage_logo {
+    max-width: 250px;
+  }
+
+	.cat-nav {
+    left: 75%;
+  }
+
+}
+
+
+@media (min-width: 1060px) {
+
+	.mittens_part::before {
+    background-position: 10%;
+  }
+
+	.subpage_logo {
+    max-width: 300px;
+  }
+
+	.joeSoul{
+	 max-width: 250px;
+  }
+
+	.cat-intro {
+    width: 50%;
+  }
+}

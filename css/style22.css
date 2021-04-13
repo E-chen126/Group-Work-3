@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+@font-face {
+	font-family:'Herkules';
+	src: url('../fonts/Herkules.otf');
+}
+
+@font-face {
+	font-family: 'PoetsenOne';
+	src: url('../fonts/PoetsenOne-Regular.ttf');
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	/* overflow: hidden;	 */
+}
+
+ .mainpart::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+	bottom: 0;
+	right: 0;
+  opacity: 0.6;
+  background-image: url('../images/greatbefore.png');
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: cover;
+}
+
+.nav {
+	z-index: 3;
+	position: absolute;
+	left: -7%;
+	top:-4%;
+}
+
+.subpage_logo {
+  cursor: pointer;
+  max-width: 200px;
+}
+
+/* Logo Animation */
+
+
+.subpage_logo {
+  animation: animation 1000ms linear both;
+}
+
+
+@keyframes animation {
+  0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.2% { -webkit-transform: matrix3d(-0.834, 0.559, 0, 0, -0.703, -0.717, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(-0.834, 0.559, 0, 0, -0.703, -0.717, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% { -webkit-transform: matrix3d(-0.986, -0.196, 0, 0, -0.017, -1.006, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(-0.986, -0.196, 0, 0, -0.017, -1.006, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.41% { -webkit-transform: matrix3d(-0.091, -1.003, 0, 0, 0.955, -0.318, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(-0.091, -1.003, 0, 0, 0.955, -0.318, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% { -webkit-transform: matrix3d(0.798, -0.613, 0, 0, 0.769, 0.648, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.798, -0.613, 0, 0, 0.769, 0.648, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.71% { -webkit-transform: matrix3d(0.933, 0.366, 0, 0, -0.224, 0.977, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.933, 0.366, 0, 0, -0.224, 0.977, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% { -webkit-transform: matrix3d(0.923, 0.391, 0, 0, -0.254, 0.97, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.923, 0.391, 0, 0, -0.254, 0.97, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% { -webkit-transform: matrix3d(0.813, 0.583, 0, 0, -0.524, 0.853, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.813, 0.583, 0, 0, -0.524, 0.853, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.92% { -webkit-transform: matrix3d(0.834, 0.552, 0, 0, -0.511, 0.86, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.834, 0.552, 0, 0, -0.511, 0.86, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% { -webkit-transform: matrix3d(0.965, 0.262, 0, 0, -0.262, 0.965, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.965, 0.262, 0, 0, -0.262, 0.965, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% { -webkit-transform: matrix3d(0.992, 0.125, 0, 0, -0.134, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.992, 0.125, 0, 0, -0.134, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  31.43% { -webkit-transform: matrix3d(1, 0.031, 0, 0, -0.042, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0.031, 0, 0, -0.042, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% { -webkit-transform: matrix3d(0.999, -0.042, 0, 0, 0.036, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, -0.042, 0, 0, 0.036, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  56.46% { -webkit-transform: matrix3d(1, 0.001, 0, 0, -0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0.001, 0, 0, -0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% { -webkit-transform: matrix3d(1, 0.003, 0, 0, -0.002, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0.003, 0, 0, -0.002, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  81.48% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+
+/* Logo Animation */
+
+
+
+
+/* Sticky footer */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainpart {
+  flex: 1 0 auto;
+}
+
+/* .footer {
+  flex-shrink: 0;
+} */
+
+.mainpart {
+	width: 100%;
+  margin: auto;
+}
+
+h1{
+	font-family: "Herkules";
+	/* text-align: center; */
+}
+
+h1 {
+	margin-bottom: 14%;
+}
+
+p{
+	font-family: "PoetsenOne";
+	/* text-align: center; */
+}
+
+.introduction {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    padding: 100px 50px;
+}
+
+/* ******************* Spark Music Note Animation ******************* */
+
+
+.music{
+	position: absolute;
+	left: 0px;
+	animation: slide 6s forwards infinite linear;
+	width: 100%;
+	max-width: 300px;
+}
+
+.music-notes{
+	position: absolute;
+	left: 0px;
+	/* So that the delayed image starts hidden */
+	opacity: 0;
+	/* animation-delay had to be after the animation: property */
+	animation: slide 6s 3s forwards infinite linear;
+	/* animation-delay: 3s; */
+	width:100%;
+	max-width: 300px;
+
+}
+
+
+@keyframes slide {
+	from {
+		/* -700px so that the pictures start completly off screen */
+		transform: translatex(-100%);
+		opacity: 1;
+	}
+	to {
+		/* 100vw so that the picture slides to the other side regardless of page width (this means the speed will change based on page width) */
+		transform: translatex(100vw);
+		opacity: 1
+	}
+
+}
+
+/************** Slideshow Images for 22 **************/
+#slideshow {
+  margin: 9% auto 1%;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+	/* margin-top: -30%; */
+}
+
+#slideshow div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+#slideshow div img {
+  width: 240px;
+}
+
+
+	.slideshow {
+		width: 100%;
+		height: 42%;
+		position: absolute;
+		margin-top: 9%;
+		opacity: 49%;
+	}
+
+
+
+
+
+
+/*  ********************** Media Queries ************************* */
+
+@media (min-width: 600px) {
+
+	.mainpart {
+    width: 80%;
+    margin: auto;
+   }
+
+	.para22 h1 {
+    margin-bottom: 5%;
+	}
+
+	.para22 p{
+		font-size: 1.2rem;
+	}
+
+	.nav {
+		left:0;
+	}
+}
+
+
+@media (min-width: 800px) {
+
+	.introduction {
+    display: flex;
+    flex-flow: row-reverse;
+	   padding: 235px 50px 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+
+	.introduction {
+    width: 80%;
+  }
+	.introduction {
+    padding: 300px 50px 200px;
+  }
+	.introduction {
+    padding: 300px 50px 200px;
+  }
+	.para22 h1 {
+    font-size: 3rem;
+  }
+	.para22 p {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+
+	#slideshow {
+    position: relative;
+    width: 300px;
+    height: 240px;
+    padding: 10px;
+		margin:0;
+  }
+}
+
+@media (min-width:1200px) {
+	.introduction {
+    width: 69%;
+		padding: 300px 82px 200px;
+  }
+}

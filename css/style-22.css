@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+@font-face {
+	font-family: 'Herkules';
+	src: url('../fonts/Herkules.otf');
+}
+
+@font-face {
+	font-family: 'PoetsenOne';
+	src: url('../fonts/PoetsenOne-Regular.ttf');
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	background-color: purple;
+	/* overflow: hidden;	 */
+}
+
+.meet22{
+	background-color: #47d5e3;
+	padding: 12%;
+	box-shadow: rgb(232 163 219) 0px 10px 33px 0px;
+	font-size: 5em;
+	text-align: center;
+}
+
+
+
+/* Logo Animation */
+img.logo {
+  width: 100%;
+  cursor: pointer;
+  max-width: 500px;
+}
+
+.nav img{
+opacity:0.5;
+transition: 1s ease;
+}
+
+.nav img:hover{
+opacity:1;
+transition: 1s ease;
+}
+
+
+h1, h2{
+	font-family: "Herkules";
+	/* text-align: center; */
+}
+
+p{
+	font-family: "PoetsenOne";
+	/* text-align: center; */
+}
+
+/* .meet22{
+
+} */
+
+/* .flexcon {
+	/* margin: 18% auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+	margin-top: -38%; */
+
+
+.char22 {
+    padding: 11%;
+		line-height: 144%;
+		font-size: 2em;
+	}
+
+.spark-heading{
+	background-color: #47d5e3;
+	width: 73%;
+	margin: 0 auto;
+	padding: 8%;
+	box-shadow: rgb(232 163 219) 0px 10px 33px 0px;
+	font-size: 4em;
+	text-align: center;
+	}
+
+/* img{
+	width: 100%;
+} */
+/* ******************* Spark Music Note Animation ******************* */
+
+
+.music {
+	position: absolute;
+	top: 89%;
+	left: 0px;
+	animation: slide 6s forwards infinite linear;
+	width: 100%;
+}
+
+.music-notes{
+	position: absolute;
+	top: 89%;
+	left: 0px;
+	/* So that the delayed image starts hidden */
+	opacity: 0;
+	/* animation-delay had to be after the animation: property */
+	animation: slide 6s 3s forwards infinite linear;
+	/* animation-delay: 3s; */
+	width:100%;
+
+}
+
+@keyframes slide {
+	from {
+		/* -700px so that the pictures start completly off screen */
+		transform: translatex(-100%);
+		opacity: 1;
+	}
+	to {
+		/* 100vw so that the picture slides to the other side regardless of page width (this means the speed will change based on page width) */
+		transform: translatex(100vw);
+		opacity: 1
+	}
+
+}
+
+/************** Slideshow Images for 22 **************/
+#slideshow {
+  margin: 9% auto 1%;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+	/* margin-top: -30%; */
+}
+
+#slideshow div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+#slideshow div img {
+  width: 240px;
+}
+
+
+	.slideshow {
+		width: 100%;
+		height: 42%;
+		position: absolute;
+		margin-top: 9%;
+		opacity: 49%;
+	}
+
+/*  ********************** Media Queries ************************* */
+
+@media (max-width: 600px) {
+	.greatbefore{
+		display: none;
+	}
+	.logo{
+		display: none;
+	}
+
+}
+
+@media (min-width: 375px) {
+	.music{
+		position: sticky;
+	}
+
+	.music-notes{
+		position: static;
+	}
+}
+
+@media (min-width: 600px) {
+	.logo{
+		display: inline;
+	}
+
+	.greatbefore{
+		display: inline;
+		opacity: 71%;
+		position: absolute;
+		width: 100%;
+		height: 41%;
+		}
+
+	.para22{
+		margin-top: 26%;
+	}
+
+
+	header{
+		display: flex;
+		flex-direction: column;
+		}
+
+	.nav{
+		margin: 0 auto;
+	}
+
+
+@media (min-width: 800px) {
+	.flexcon{
+		display: flex;
+	}
+
+	.para22{
+		margin-top: 39%;
+	}
+
+	.right {
+		margin-top:27%
+
+	}
+
+	.spark-heading {
+		background-color: #47d5e3;
+		width: 73%;
+		margin: 0 -11%;
+		padding: 8%;
+		box-shadow: rgb(232 163 219) 0px 10px 33px 0px;
+		font-size: 4em;
+		text-align: center;
+	}
+
+	.spark-para{
+		background-color: #48d5e2;
+		width: 100%;
+		padding: 22% 6.9%;
+		margin: -23% -28%;
+		text-align: center;
+	}
+
+}
